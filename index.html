@@ -7,7 +7,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>stock-trader-project</title>
-    <IfModule mod_rewrite.c>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="build.js"></script>
+  </body>
+  <IfModule mod_rewrite.c>
         RewriteEngine On
         RewriteBase /
         RewriteRule ^index\.html$ - [L]
@@ -15,9 +20,4 @@
         RewriteCond %{REQUEST_FILENAME} !-d
         RewriteRule . /index.html [L]
     </IfModule>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script src="build.js"></script>
-  </body>
 </html>
